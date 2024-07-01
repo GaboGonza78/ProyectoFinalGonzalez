@@ -1,0 +1,13 @@
+nav {
+    text-align: center;
+    margin-left: 5px;
+    position: fixed;
+    top: 0;
+    width: 500px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
