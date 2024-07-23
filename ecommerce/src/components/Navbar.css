@@ -1,13 +1,17 @@
 nav {
-    text-align: center;
-    margin-left: 5px;
-    position: fixed;
-    top: 0;
-    width: 500px;
     background-color: lightgray;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+    padding: 10px 20px; 
     box-sizing: border-box;
+    height: 80px; 
 }
+
+
+
