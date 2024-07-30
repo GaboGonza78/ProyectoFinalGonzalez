@@ -41,12 +41,18 @@ const productos = [
         precio: 1700,
         categoria: "Bajo"
     },
+    {
+        id: 8,
+        nombre: "Tama M Master Signature",
+        precio: 3000,
+        categoria: "Bateria"
+    },
 ];
 
 export default function fetchData() {
      return new Promise(resolve => {
          setTimeout(() => {
              resolve(productos);
-         }, 3000);
+         }, 500);
      });
 };

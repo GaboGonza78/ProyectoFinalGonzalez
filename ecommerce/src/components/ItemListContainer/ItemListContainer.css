@@ -1,0 +1,40 @@
+.app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .category-filter {
+    margin-bottom: 1rem;
+  }
+  
+  .filter-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+  }
+  
+  .filter-button.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 200px;
+    text-align: left;
+  }
+  

@@ -1,17 +1,37 @@
-nav {
+.nav-bar{
     background-color: lightgray;
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
     position: fixed;
     top: 0; 
     left: 0; 
     z-index: 1000; 
-    padding: 10px 20px; 
-    box-sizing: border-box;
     height: 80px; 
 }
-
-
+.nav-items{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.item-nav{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.item-text{
+    color: white;
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px; 
+    border: 2px solid white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+.item-text:hover{
+    cursor: pointer
+}
 
