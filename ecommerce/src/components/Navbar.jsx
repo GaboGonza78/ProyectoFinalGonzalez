@@ -1,6 +1,8 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import CartWidjet from "./CartWidjet/CartWidjet";
 import './Navbar.css'
+
 
 function Navbar() {
     return (
@@ -25,9 +27,7 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className="item-nav">
-                    <Link to="/cart">
                     <CartWidjet />
-                    </Link>
                 </li>
             </ul>
         </div>

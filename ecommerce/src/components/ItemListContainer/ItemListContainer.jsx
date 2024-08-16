@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./ItemListContainer.css";
 import ItemList from './ItemList';
 import Navbar from '../Navbar';
 import CategoryFilter from './CategoryFilter'; // Recordar importar el filtro de categorías
+import Loader from '../Loader';
+import { useAppContext } from '../Context';
 
-function ItemListContainer({ productos }) {
+const ItemListContainer = () => {
+
+    const {cargarData, productos} = useAppContext();
+
+    const dataContext = useAppContext();
     const [selectedCategory, setSelectedCategory] = useState(null);
 
     const categories = ['Guitarra', 'Bajo', 'Bateria'];
@@ -13,12 +19,16 @@ function ItemListContainer({ productos }) {
         ? productos.filter(product => product.categoria === selectedCategory)
         : productos;
 
+    useEffect(() => {
+        cargarData();
+    });
+
     return (
         <>
             <Navbar />
             {
                 productos.length === 0 ?
-                    <p>Cargando...</p>
+                    <Loader />
                     :
                     <>
                         <h1 style={{padding: "2rem"}}>Tienda de Instrumentos Musicales</h1>
