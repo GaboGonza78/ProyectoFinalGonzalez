@@ -3,7 +3,7 @@ import './Item.css';
 import { Link } from "react-router-dom";
 import { useAppContext } from '../Context';
 
-const Item = ({ nombre, precio, id }) => {
+const Item = ({ id, nombre, precio }) => {
 
     const { agregarAlCarrito } = useAppContext();
 

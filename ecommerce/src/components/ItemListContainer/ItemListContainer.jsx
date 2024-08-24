@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./ItemListContainer.css";
 import ItemList from './ItemList';
 import Navbar from '../Navbar';
-import CategoryFilter from './CategoryFilter'; // Recordar importar el filtro de categorías
+import CategoryFilter from './CategoryFilter';
 import Loader from '../Loader';
 import { useAppContext } from '../Context';
 
